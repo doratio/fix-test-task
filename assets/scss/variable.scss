@@ -1,0 +1,53 @@
+@import "../../assets/scss/rem-mixin.scss";
+
+$green: #eafee1;
+$green-text: #61d135;
+
+$blue: #e1eafe;
+$blue-text: #5896fe;
+$blue-button: #4460c9;
+
+$red: #fee1e1;
+$red-text: #fd6c6f;
+
+$title: #333333;
+$text: #929292;
+
+$gray: #757575;
+
+$border: 1px solid #dddddd;
+
+%button {
+  background: $blue-button;
+  color: #ffffff;
+
+  :hover {
+    color: $blue-text;
+  }
+}
+
+%inline-button {
+  user-select: none;
+  cursor: pointer;
+  font-size: rem(16);
+  border: none;
+  background: none;
+  color: $blue-button;
+  border-bottom: 1px dotted $blue-button;
+  padding: 1px 0;
+
+  &:hover {
+    color: $blue-text;
+    border-bottom: 1px dotted $blue-text;
+  }
+}
+
+%link {
+  user-select: none;
+  font-size: rem(16);
+  color: $blue-button;
+
+  &:hover {
+    color: $blue-text;
+  }
+}
