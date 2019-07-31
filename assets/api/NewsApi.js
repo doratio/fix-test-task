@@ -20,7 +20,6 @@ export class NewsApi extends AxiosWrapper {
     let dto
 
     try {
-      throw 'tt'
       dto = (await this.post("https://app.fakejson.com/q", payload)).data;
       dto.map(function (a) {
         a.photo = '/img/card.jpg'
